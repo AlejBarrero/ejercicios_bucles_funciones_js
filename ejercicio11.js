@@ -16,5 +16,17 @@ const movies = [
 ];
 
 function averageMovieDuration(movies) {
-    // insert code
+    let cantidadPeliculas = 0;
+    let sumaMinutos = 0;
+    let promedioMinutos = 0;
+
+    for (let item of movies) {
+        sumaMinutos += item.duration;
+        cantidadPeliculas++;
+        promedioMinutos = (sumaMinutos / cantidadPeliculas);
+    }
+    console.log(promedioMinutos);
+    return promedioMinutos;
 }
+
+averageMovieDuration(movies);
