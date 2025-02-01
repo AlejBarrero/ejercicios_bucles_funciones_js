@@ -15,5 +15,17 @@ const mutants = [
 ];
 
 function findMutantByPower(mutants, power) {
-    // insert code
+    let lista = [];
+
+    for (let item of mutants) {
+        if (item.power === power) {
+            lista.push(item);
+        } else if (lista[item.power] === item.power) {
+            lista.push(item);
+        }
+    }
+    console.log("Lista de personajes con el poder indicado: ", lista);
+    return lista;
 }
+
+findMutantByPower(mutants, "telepathy");
