@@ -24,3 +24,20 @@ function influenciasArtistas(lista) {
 }
 
 influenciasArtistas(artists);
+
+/* ***********************************************************
+
+OTRA OPCIÓN SERÍA USAR EL SIGUIENTE CÓDIGO:
+
+function influenciasArtistas(lista) {
+    for (let item of lista) {
+        for (let influencias of item.influences) {
+            console.log(item.name + ": " + influencias);
+        }
+    }
+}
+
+
+console.log(influenciasArtistas(artists));
+
+*********************************************************** */
