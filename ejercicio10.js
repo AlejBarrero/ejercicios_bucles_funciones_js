@@ -16,9 +16,11 @@ const capitals = {
 };
 
 function getCapital(country) {
-    for (pais in country) {
-        console.log("" + pais);
+    if (capitals[country]) {
+        console.log("La capital de " + country + " es: " + capitals[country]);
+    } else {
+        console.log("Desafortunadamente no tenemos constancia de la capital de: " + country);
     }
 }
 
-getCapital(capitals);
+getCapital("Spain");
