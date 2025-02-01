@@ -15,5 +15,9 @@ const actors = [
 ];
 
 function calculateActorsAges(actors) {
-    // insert code
+    let edadActual = 2025 - born;
+
+    for (let item of actors) {
+        console.log(item);
+    }
 }
