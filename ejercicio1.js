@@ -15,4 +15,13 @@ const characters = [
 
 const humanCharacters = [];
 
-// Añade tu código de bucle aquí
+function filtrarPersonas(lista) {
+    for (objeto of lista) {
+        if (objeto.species === "Human") {
+            humanCharacters.push(objeto);
+        }
+    }
+    return humanCharacters;
+}
+
+console.log(filtrarPersonas(characters));
