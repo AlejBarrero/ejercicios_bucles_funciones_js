@@ -14,4 +14,18 @@ const cartoons = [
     { name: "Dexter's Laboratory", debut: 1996 }
 ];
 
-// Añade tu código de bucle aquí
+let serieMasAntigua = cartoons[0].name;
+let debutMasAntiguo = cartoons[0].debut;
+
+function filtrarSerie(lista) {
+    for (serie of lista) {
+        if (serie.debut < lista[0].debut) {
+            serieMasAntigua = lista.name;
+            debutMasAntiguo = lista.debut;
+        }
+    }
+    console.log("La serie mas antigua es: " + serieMasAntigua);
+    return serieMasAntigua;
+}
+
+console.log(filtrarSerie(cartoons));
