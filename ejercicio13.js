@@ -15,9 +15,14 @@ const actors = [
 ];
 
 function calculateActorsAges(actors) {
-    let edadActual = 2025 - born;
+    let arrayEdadesActuales = [];
 
     for (let item of actors) {
-        console.log(item);
+        item.born = (2025 - item.born);
+        arrayEdadesActuales.push({name: item.name, age: item.born});
     }
+    console.log(arrayEdadesActuales);
+    return arrayEdadesActuales;
 }
+
+calculateActorsAges(actors);
