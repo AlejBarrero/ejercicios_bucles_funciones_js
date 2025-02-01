@@ -13,3 +13,16 @@ const albums = [
     { title: 'The Joshua Tree', genre: 'Rock', duration: 50.11 }
 ];
 
+function sumarDuraciones(lista) {
+    let sumaMinutos = 0;
+
+    for (cancion of lista) {
+        if (cancion.genre === "Rock") {
+            sumaMinutos += cancion.duration;
+        }
+    }
+    console.log("Total de minutos de canciones de Rock: " + sumaMinutos);
+    return sumaMinutos;
+}
+
+sumarDuraciones(albums);
